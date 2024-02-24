@@ -1,23 +1,14 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+  <div class="app">
+    <div class="form">
+      <input type="text" placeholder="Your Name" aria-placeholder="input your name" id="userText">
+      <input type="email" placeholder="Your Email" aria-placeholder="input your email" id="userEmail">
+      <input type="number" placeholder="Phone Number" aria-placeholder="input your phone number" id="userNumber">
+      <button type="button">Generate</button>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
   </div>
 `
 
